@@ -1,78 +1,87 @@
-/* ======= RESET & GLOBAL STYLES ======= */
+/* ========== GLOBAL STYLES ========== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Classic font for a historical feel */
 }
 
 body {
-  font-family: Georgia, serif; /* Use a serif font for a historical feel (optional) */
-  background-color: #fff;     /* White background like in your screenshot */
-  color: #333;
-  line-height: 1.5;
+    background-color: white;
+    color: #333;
+    text-align: center;
 }
 
-/* ======= TITLES ======= */
-.main-title {
-  text-align: center;
-  font-size: 2rem;
-  margin: 40px 0 20px;
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
 }
 
-.insights-title {
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 40px 0 20px;
+.logo {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+    margin-right: 20px;
 }
 
-/* ======= SITES ROW (3 IMAGES) ======= */
-.sites-row {
-  display: flex;
-  justify-content: center;  /* Centers the row horizontally */
-  gap: 30px;               /* Space between site cards */
-  max-width: 1200px;       /* Constrain width on large screens */
-  margin: 0 auto 40px;     /* Auto left/right to center, plus bottom margin */
-  padding: 0 20px;         /* Some horizontal padding */
+header h1 {
+    font-size: 2rem;
+    flex-grow: 1;
+    text-align: center;
 }
 
-.site-card {
-  text-align: center;      /* Center text & image within each card */
-  max-width: 300px;        /* Constrain each card's width */
+/* ========== HISTORICAL SITES (First 3 images side by side) ========== */
+.historical-sites {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-.site-card img {
-  width: 100%;             /* Make the image fill the card's width */
-  height: auto;            /* Keep aspect ratio */
-  display: block;
-  margin: 0 auto 15px;     /* Center image & add spacing below */
+.site {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    text-align: left;
+    gap: 20px;
 }
 
-.site-card h2 {
-  font-size: 1rem;
-  margin-bottom: 5px;
+/* Ensuring all images are the same size */
+.site img, .insight img {
+    width: 250px;  /* Standardized width */
+    height: 180px; /* Standardized height */
+    object-fit: cover; /* Ensures consistent cropping */
+    border-radius: 8px;
 }
 
-.site-card p {
-  font-size: 0.9rem;
-  color: #555;
+.site-info {
+    max-width: 300px;
 }
 
-/* ======= HISTORICAL INSIGHTS SECTION ======= */
-.insights-section {
-  text-align: center;      /* Center the content */
-  max-width: 700px;        /* Constrain width for large screens */
-  margin: 0 auto 40px;     /* Center & add spacing below */
-  padding: 0 20px;         /* Horizontal padding */
+.site-info h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
-.insights-section img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;     /* Spacing below image */
+.site-info p {
+    font-size: 0.9rem;
+    color: #555;
 }
 
-.insights-section p {
-  font-size: 0.9rem;
-  color: #555;
+/* ========== HISTORICAL INSIGHTS (Last 2 images centered) ========== */
+.section-title {
+    font-size: 1.8rem;
+    margin-top: 40px;
 }
+
+.historical-insights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
