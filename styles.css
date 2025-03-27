@@ -11,133 +11,146 @@ body {
     color: #333;
 }
 
-/* ====== Header ====== */
+/* ========== HEADER ========== */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 15px 30px;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header img {
-    height: 40px; /* Adjust logo size */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.logo img {
+    display: block;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-.search-bar {
-    padding: 5px;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #007BFF; /* Blue highlight for active or hover link */
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ========== MAIN SECTIONS ========== */
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+/* Lists */
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+/* ========== FORM STYLING ========== */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* ====== Hero Section ====== */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: white;
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
-.hero img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
+form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-.hero h1 {
-    margin-top: 20px;
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* ====== Discover Section ====== */
-.discover {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;
-}
-
-.discover h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.discover-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.discover-item {
-    text-align: center;
-    width: 150px;
-}
-
-.discover-item img {
-    width: 50px;
-    height: 50px;
-}
-
-/* ====== Local Insights ====== */
-.local-insights {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.local-insights h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.insights-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.insight-box {
-    background-color: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.insight-box h3 {
-    font-size: 1.2em;
-}
-
-/* ====== Footer ====== */
+/* ========== FOOTER ========== */
 footer {
-    text-align: center;
-    background-color: white;
-    padding: 15px;
+    background-color: #fff;
     border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
 }
 
-footer a {
-    text-decoration: none;
+footer p {
     color: #666;
-    margin: 0 15px;
+    font-size: 0.9rem;
 }
