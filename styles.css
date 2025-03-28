@@ -1,107 +1,127 @@
-/* General Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header Styling */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo */
-header img {
-    height: 50px;
-    width: auto;
-}
-
-/* Title Styling */
-header h1 {
-    flex-grow: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    margin: 0;
-    font-size: 24px;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
+header h1 {
     display: inline;
 }
 
-nav ul li a {
+header img {
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
 }
 
-/* Full-Width Banner Image */
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Image */
 .banner {
-    width: 100%;
-    height: 400px;
-    background: url('ColumbiaMain.jpg') center/cover no-repeat;
+    background-image: url('ColumbiaMain.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
-/* Section Styling */
+/* Page Layout */
 section {
-    background-color: white;
-    margin: 0;
+    padding: 2rem;
+    margin-top: 20px;
 }
 
-/* Welcome Text Centering */
-h2:first-of-type {
-    text-align: center;
-    font-weight: normal;
-    padding-top: 20px;
+section h2 {
+    color: #333;
+    font-size: 2rem;
 }
 
-/* Bold Headers */
-h2, h3 {
-    font-weight: bold;
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+article h3 {
+    color: #444;
+    font-size: 1.5rem;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
 }
 
 footer a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-/* Public Resources Page Content Styling */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-
-ul li a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-ul li a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
