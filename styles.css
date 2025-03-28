@@ -56,7 +56,7 @@ nav ul li a {
     background: url('ColumbiaMain.jpg') center/cover no-repeat;
 }
 
-/* Section Styling for Both Pages */
+/* Section Styling */
 section {
     background-color: white;
     margin: 0;
@@ -88,33 +88,7 @@ footer a {
     text-decoration: none;
 }
 
-/* Public Resources Page Specific Styles */
-.public-resources section {
-    padding: 40px 15%;
-}
-
-/* Links in the Public Resources Page */
-a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Section-Specific Headers */
-h2 {
-    text-align: center;
-    font-weight: bold;
-}
-
-h3 {
-    font-weight: bold;
-    color: #333;
-}
-
-/* List Styling */
+/* Public Resources Page Content Styling */
 ul {
     padding-left: 20px;
 }
@@ -123,32 +97,12 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* Additional Styles for Public Resources Section */
 ul li a {
     color: #0073e6;
     text-decoration: none;
 }
 
-/* Add Footer and Other Styles (No Extra Section Padding Between Sections) */
-section {
-    margin: 0;
-    padding: 0;
+ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Special Rules for "Explore Columbia" Page */
-.explore-columbia .banner {
-    width: 100%;
-    height: 400px;
-}
-
-/* Common Footer Style */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
